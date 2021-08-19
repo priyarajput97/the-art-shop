@@ -15,10 +15,10 @@ import {
 } from 'react-native';
 
 import Colors from './src/constants/Colors';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
 import Feed from './src/screens/Home/Feed';
 import Account from './src/screens/Home/Account';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import UploadPost from './src/screens/Home/UploadPost';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
@@ -38,8 +38,8 @@ const App = () => {
 
       <NavigationContainer style={backgroundStyle}>
         <Tab.Navigator
-          screenOptions={({route}) => ({
-            tabBarIcon: ({focused, color}) => {
+          screenOptions={({ route }) => ({
+            tabBarIcon: ({ focused, color }) => {
               let iconName;
 
               if (route.name === 'Feed') {
@@ -58,11 +58,15 @@ const App = () => {
                 />
               );
             },
-            tabBarActiveBackgroundColor: Colors.dark,
-            tabBarInactiveBackgroundColor: Colors.dark,
+            tabBarActiveBackgroundColor: Colors.darker,
+            tabBarInactiveBackgroundColor: Colors.darker,
             tabBarActiveTintColor: Colors.primary,
             tabBarInactiveTintColor: Colors.light,
             tabBarShowLabel: false,
+            headerShown: false,
+            tabBarStyle: {
+              borderTopWidth: 0,
+            },          
           })}>
           <Tab.Screen name="Feed" component={Feed} />
           <Tab.Screen name="Upload Post" component={UploadPost} />

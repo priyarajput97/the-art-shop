@@ -4,8 +4,8 @@ import Colors from '../../constants/Colors';
 
 function Account() {
   return (
-    <View>
-      <Text style={{color: Colors.primary, fontSize: 50, fontFamily: 'Nunito-Regular'}}>Account</Text>
+    <View style={{ flex: 1, backgroundColor: Colors.dark, alignItems: 'center', justifyContent: 'center' }}>
+      <Text style={{ color: Colors.primary, fontSize: 30, fontFamily: 'Nunito-Regular' }}>Account</Text>
     </View>
   );
 }
