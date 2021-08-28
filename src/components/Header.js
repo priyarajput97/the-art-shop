@@ -13,7 +13,7 @@ function Header() {
 
 const styles = StyleSheet.create({
     wrapper: {
-        backgroundColor: Colors.darker,
+        backgroundColor: Colors.dark,
         height: 55,
         justifyContent: 'center',
         paddingHorizontal: 20,

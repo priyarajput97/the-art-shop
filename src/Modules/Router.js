@@ -36,8 +36,8 @@ const HomeTabs = () => (
                     />
                 );
             },
-            tabBarActiveBackgroundColor: Colors.darker,
-            tabBarInactiveBackgroundColor: Colors.darker,
+            tabBarActiveBackgroundColor: Colors.dark,
+            tabBarInactiveBackgroundColor: Colors.dark,
             tabBarActiveTintColor: Colors.primary,
             tabBarInactiveTintColor: Colors.light,
             tabBarShowLabel: false,
@@ -62,8 +62,8 @@ const AuthStack = () => (
 function Router() {
     return (
         <NavigationContainer>
-            <AuthStack />
-            {/* <HomeTabs /> */}
+            {/* <AuthStack /> */}
+            <HomeTabs />
         </NavigationContainer>
     )
 }
